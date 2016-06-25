@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>ngTable</id>
+    <version>0.8.3</version>
+    <title>ngTable</title>
+    <authors>Vitalii Savchuk</authors>
+    <owners>Vitalii Savchuk</owners>
+    <licenseUrl>http://creativecommons.org/licenses/BSD/</licenseUrl>
+    <projectUrl>https://github.com/esvit/ng-table</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Simple table with sorting and filtering on AngularJS</description>
+    <releaseNotes>* ngTableDefaultGetData: should ignore null and undefined filter values
+* NgTableParams:
+  - filter function option to remove insignificant values
+  - isSortBy direction parameter now optional
+  - add response error interception 
+* number.html: new filter template for numbers</releaseNotes>
+    <tags>ngTable</tags>
+  </metadata>
+</package>

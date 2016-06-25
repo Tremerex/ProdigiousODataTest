@@ -1,0 +1,10 @@
+c:\users\garnier\documents\visual studio 2013\Projects\Prodigiou\Prodigious.Core.Common\bin\Debug\Prodigious.Core.Common.dll.config
+c:\users\garnier\documents\visual studio 2013\Projects\Prodigiou\Prodigious.Core.Common\bin\Debug\Prodigious.Core.Common.dll
+c:\users\garnier\documents\visual studio 2013\Projects\Prodigiou\Prodigious.Core.Common\bin\Debug\Prodigious.Core.Common.pdb
+c:\users\garnier\documents\visual studio 2013\Projects\Prodigiou\Prodigious.Core.Common\bin\Debug\EntityFramework.dll
+c:\users\garnier\documents\visual studio 2013\Projects\Prodigiou\Prodigious.Core.Common\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\garnier\documents\visual studio 2013\Projects\Prodigiou\Prodigious.Core.Common\bin\Debug\EntityFramework.xml
+c:\users\garnier\documents\visual studio 2013\Projects\Prodigiou\Prodigious.Core.Common\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\garnier\documents\visual studio 2013\Projects\Prodigiou\Prodigious.Core.Common\obj\Debug\Prodigious.Core.Common.dll
+c:\users\garnier\documents\visual studio 2013\Projects\Prodigiou\Prodigious.Core.Common\obj\Debug\Prodigious.Core.Common.pdb
+c:\users\garnier\documents\visual studio 2013\Projects\Prodigiou\Prodigious.Core.Common\obj\Debug\Prodigious.Core.Common.csprojResolveAssemblyReference.cache

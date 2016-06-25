@@ -1,0 +1,35 @@
+﻿<p>List Products</p>
+<div class="form-group">
+    <label class="form-inline" for="enableFilter">
+        Enable Filter
+    </label>
+    <input type="checkbox" id="enableFilter" class="form-inline" ng-model="vm.enableFilter" />
+</div>
+<div class="container-fluid" style="font-size:12px">
+    <div class="row" cg-busy="vm.busy">
+        <table ng-table="vm.tableParams" class="table table-striped table-hover table-condensed ng-scope text-center" show-filter="vm.enableFilter">
+            <tr ng-repeat="item in $data">
+                <td title="'Product ID'" sortable="'ProductID'">
+                    <a ui-sref="Product({ id: item.productID })">
+                        {{item.productID}}
+                    </a>
+                </td>
+                <td title="'Name'" filter="{ Name: 'text'}" sortable="'Name'">
+                    {{item.name}}
+                </td>
+                <td title="'Product Number'" filter="{ ProductNumber: 'text'}" sortable="'ProductNumber'">
+                    {{item.productNumber}}
+                </td>
+                <td title="'Color'" filter="{ Color: 'text'}" sortable="'Color'">
+                    {{item.color}}
+                </td>
+                <td title="'List Price'" filter="{ ListPrice: 'text'}" sortable="'ListPrice'">
+                    {{item.listPrice}}
+                </td>
+                <td title="'Modified Date'" filter="{ ModifiedDate: 'text'}" sortable="'ModifiedDate'">
+                    {{item.modifiedDate}}
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

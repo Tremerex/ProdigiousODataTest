@@ -1,0 +1,9 @@
+c:\users\garnier\documents\visual studio 2013\Projects\Prodigiou\Prodigious.Data\bin\Debug\Prodigious.Data.dll
+c:\users\garnier\documents\visual studio 2013\Projects\Prodigiou\Prodigious.Data\bin\Debug\Prodigious.Data.pdb
+c:\users\garnier\documents\visual studio 2013\Projects\Prodigiou\Prodigious.Data\bin\Debug\EntityFramework.dll
+c:\users\garnier\documents\visual studio 2013\Projects\Prodigiou\Prodigious.Data\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\garnier\documents\visual studio 2013\Projects\Prodigiou\Prodigious.Data\bin\Debug\EntityFramework.xml
+c:\users\garnier\documents\visual studio 2013\Projects\Prodigiou\Prodigious.Data\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\garnier\documents\visual studio 2013\Projects\Prodigiou\Prodigious.Data\obj\Debug\Prodigious.Data.dll
+c:\users\garnier\documents\visual studio 2013\Projects\Prodigiou\Prodigious.Data\obj\Debug\Prodigious.Data.pdb
+C:\Users\Garnier\Documents\Visual Studio 2013\Projects\Prodigiou\Prodigious.Data\obj\Debug\Prodigious.Data.csprojResolveAssemblyReference.cache

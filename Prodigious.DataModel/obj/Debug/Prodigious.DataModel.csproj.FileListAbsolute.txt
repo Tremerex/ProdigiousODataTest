@@ -1,0 +1,12 @@
+c:\users\garnier\documents\visual studio 2013\Projects\Prodigiou\Prodigious.DataModel\obj\Debug\Prodigious.DataModel.csprojResolveAssemblyReference.cache
+c:\users\garnier\documents\visual studio 2013\Projects\Prodigiou\Prodigious.DataModel\bin\Debug\Prodigious.DataModel.dll.config
+c:\users\garnier\documents\visual studio 2013\Projects\Prodigiou\Prodigious.DataModel\bin\Debug\Prodigious.DataModel.dll
+c:\users\garnier\documents\visual studio 2013\Projects\Prodigiou\Prodigious.DataModel\bin\Debug\Prodigious.DataModel.pdb
+c:\users\garnier\documents\visual studio 2013\Projects\Prodigiou\Prodigious.DataModel\bin\Debug\EntityFramework.dll
+c:\users\garnier\documents\visual studio 2013\Projects\Prodigiou\Prodigious.DataModel\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\garnier\documents\visual studio 2013\Projects\Prodigiou\Prodigious.DataModel\bin\Debug\Prodigious.Data.dll
+c:\users\garnier\documents\visual studio 2013\Projects\Prodigiou\Prodigious.DataModel\bin\Debug\Prodigious.Data.pdb
+c:\users\garnier\documents\visual studio 2013\Projects\Prodigiou\Prodigious.DataModel\bin\Debug\EntityFramework.xml
+c:\users\garnier\documents\visual studio 2013\Projects\Prodigiou\Prodigious.DataModel\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\garnier\documents\visual studio 2013\Projects\Prodigiou\Prodigious.DataModel\obj\Debug\Prodigious.DataModel.dll
+c:\users\garnier\documents\visual studio 2013\Projects\Prodigiou\Prodigious.DataModel\obj\Debug\Prodigious.DataModel.pdb
