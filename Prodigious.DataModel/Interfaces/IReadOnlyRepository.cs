@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Prodigious.DataModel.Interfaces
+namespace Prodigious.DataModel
 {
     public interface IReadOnlyRepository<T, R> 
         where T : class

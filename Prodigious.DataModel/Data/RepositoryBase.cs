@@ -1,5 +1,4 @@
-﻿using Prodigious.DataModel.Interfaces;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -8,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Prodigious.DataModel
 {
-    public abstract class RepositoryBase<T, R, C> : IRepository<T, R>, IDisposable
+    public abstract class RepositoryBase<T, R, C> : IRepository<T, R>
         where T: class
         where C: DbContext, new()
     {
@@ -31,24 +30,24 @@ namespace Prodigious.DataModel
             return _context.Set<T>().AsQueryable();
         }
 
-        public T Insert(T Entity)
+        public T Insert(T entity)
         {
-            _context.Entry<T>(Entity).State = EntityState.Added;
+            _context.Entry<T>(entity).State = EntityState.Added;
             _context.SaveChanges();
-            return Entity;
+            return entity;
         }
 
-        public T Update(T Entity)
+        public T Update(T entity)
         {
-            _context.Entry<T>(Entity).State = EntityState.Modified;
+            _context.Entry<T>(entity).State = EntityState.Modified;
             _context.SaveChanges();
-            return Entity;
+            return entity;
         }
 
-        public void Delete(R Id)
+        public void Delete(R id)
         {
-            T Entity = _context.Set<T>().Find(Id);
-            _context.Entry<T>(Entity).State = EntityState.Deleted;
+            T entity = _context.Set<T>().Find(id);
+            _context.Entry<T>(entity).State = EntityState.Deleted;
             _context.SaveChanges();
         }
 

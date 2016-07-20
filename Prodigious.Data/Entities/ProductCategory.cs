@@ -1,29 +1,16 @@
-using Prodigious.Data.Interfaces;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Data.Entity.Spatial;
 
 namespace Prodigious.Data
 {
 
-    [Table("SalesLT.ProductCategory")]
     public partial class ProductCategory : IModificationHistory
     {
-
-        public ProductCategory()
-        {
-            Products = new HashSet<Product>();
-            ProductCategory1 = new HashSet<ProductCategory>();
-        }
 
         public int ProductCategoryID { get; set; }
 
         public int? ParentProductCategoryID { get; set; }
 
-        [Required]
-        [StringLength(50)]
         public string Name { get; set; }
 
         public Guid rowguid { get; set; }
@@ -36,8 +23,8 @@ namespace Prodigious.Data
 
         public DateTime ModifiedDate { get; set; }
 
-        [NotMapped]
         public bool IsDirty { get; set; }
+
 
     }
 }

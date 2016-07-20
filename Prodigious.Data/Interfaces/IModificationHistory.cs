@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Prodigious.Data.Interfaces
+namespace Prodigious.Data
 {
     public interface IModificationHistory
     {

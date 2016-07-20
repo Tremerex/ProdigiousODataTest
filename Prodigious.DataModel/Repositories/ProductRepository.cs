@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Prodigious.DataModel.Repositories
+namespace Prodigious.DataModel
 {
-    public class ProductRepository : RepositoryBase<Product, int, ProdigiousContext>
+    public class ProductRepository : RepositoryBase<Product, int, ProdigiousContext>, IProductRepository
     {
     }
 }

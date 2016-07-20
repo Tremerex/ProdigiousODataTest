@@ -2,7 +2,6 @@ using System;
 using System.Data.Entity;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
-using Prodigious.Data.Interfaces;
 
 namespace Prodigious.Data
 {
@@ -27,16 +26,56 @@ namespace Prodigious.Data
         {
 
             modelBuilder.Entity<Product>()
+                .ToTable("Product", "SalesLT")
+                .HasKey<int>(e => e.ProductID)
+                .Ignore(e => e.IsDirty);
+
+            modelBuilder.Entity<Product>()
+                .Property(e => e.Name)
+                .IsRequired()
+                .HasMaxLength(50);
+
+            modelBuilder.Entity<Product>()
+                .Property(e => e.ProductNumber)
+                .IsRequired()
+                .HasMaxLength(25);
+
+            modelBuilder.Entity<Product>()
+                .Property(e => e.Color)
+                .IsRequired()
+                .HasMaxLength(15);
+
+            modelBuilder.Entity<Product>()
                 .Property(e => e.StandardCost)
+                .HasColumnType("money")
                 .HasPrecision(19, 4);
 
             modelBuilder.Entity<Product>()
                 .Property(e => e.ListPrice)
+                .HasColumnType("money")
                 .HasPrecision(19, 4);
+                
+            modelBuilder.Entity<Product>()
+                .Property(e => e.Size)
+                .HasMaxLength(5);
 
             modelBuilder.Entity<Product>()
                 .Property(e => e.Weight)
                 .HasPrecision(8, 2);
+
+            modelBuilder.Entity<Product>()
+                .Property(e => e.ThumbnailPhotoFileName)
+                .HasMaxLength(50);
+
+            modelBuilder.Entity<ProductCategory>()
+                .ToTable("ProductCategory", "SalesLT")
+                .HasKey<int>(e => e.ProductCategoryID)
+                .Ignore(e => e.IsDirty);
+
+            modelBuilder.Entity<ProductCategory>()
+                .Property(e => e.Name)
+                .IsRequired()
+                .HasMaxLength(50);
 
             modelBuilder.Entity<ProductCategory>()
                 .HasMany(e => e.ProductCategory1)
@@ -44,9 +83,33 @@ namespace Prodigious.Data
                 .HasForeignKey(e => e.ParentProductCategoryID);
 
             modelBuilder.Entity<ProductDescription>()
+                .ToTable("ProductDescription", "SalesLT")
+                .HasKey<int>(e => e.ProductDescriptionID)
+                .Ignore(e => e.IsDirty);
+
+            modelBuilder.Entity<ProductDescription>()
+                .Property(e => e.Description)
+                .IsRequired()
+                .HasMaxLength(400);
+
+            modelBuilder.Entity<ProductDescription>()
                 .HasMany(e => e.ProductModelProductDescriptions)
                 .WithRequired(e => e.ProductDescription)
                 .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<ProductModel>()
+                .ToTable("ProductModel", "SalesLT")
+                .HasKey<int>(e => e.ProductModelID)
+                .Ignore(e => e.IsDirty);
+
+            modelBuilder.Entity<ProductModel>()
+                .Property(e => e.Name)
+                .IsRequired()
+                .HasMaxLength(50);
+
+            modelBuilder.Entity<ProductModel>()
+                .Property(e => e.CatalogDescription)
+                .HasColumnType("xml");
 
             modelBuilder.Entity<ProductModel>()
                 .HasMany(e => e.ProductModelProductDescriptions)
@@ -54,7 +117,24 @@ namespace Prodigious.Data
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<ProductModelProductDescription>()
+                .ToTable("ProductModelProductDescription", "SalesLT")
+                .HasKey(e => new { e.ProductModelID, e.ProductDescriptionID, e.Culture })
+                .Ignore(e => e.IsDirty);
+
+            modelBuilder.Entity<ProductModelProductDescription>()
+                .Property(e => e.ProductModelID)
+                .HasColumnOrder(0)
+                .HasDatabaseGeneratedOption(DatabaseGeneratedOption.None);
+
+            modelBuilder.Entity<ProductModelProductDescription>()
+                .Property(e => e.ProductDescriptionID)
+                .HasColumnOrder(1)
+                .HasDatabaseGeneratedOption(DatabaseGeneratedOption.None);
+
+            modelBuilder.Entity<ProductModelProductDescription>()
                 .Property(e => e.Culture)
+                .HasColumnOrder(2)
+                .HasMaxLength(6)
                 .IsFixedLength();
 
         }

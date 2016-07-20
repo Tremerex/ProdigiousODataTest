@@ -73,3 +73,14 @@ c:\users\garnier\documents\visual studio 2013\Projects\Prodigiou\Prodigious.Web\
 c:\users\garnier\documents\visual studio 2013\Projects\Prodigiou\Prodigious.Web\bin\zh-Hant\System.Spatial.resources.dll
 c:\users\garnier\documents\visual studio 2013\Projects\Prodigiou\Prodigious.Web\bin\Prodigious.DataModel.dll
 c:\users\garnier\documents\visual studio 2013\Projects\Prodigiou\Prodigious.Web\bin\Prodigious.DataModel.pdb
+C:\Users\Garnier\Documents\Visual Studio 2013\Projects\Prodigiou\Prodigious.Web\bin\Ninject.dll
+C:\Users\Garnier\Documents\Visual Studio 2013\Projects\Prodigiou\Prodigious.Web\bin\Ninject.Web.Common.dll
+C:\Users\Garnier\Documents\Visual Studio 2013\Projects\Prodigiou\Prodigious.Web\bin\Ninject.Web.Mvc.dll
+C:\Users\Garnier\Documents\Visual Studio 2013\Projects\Prodigiou\Prodigious.Web\bin\Ninject.Web.WebApi.dll
+C:\Users\Garnier\Documents\Visual Studio 2013\Projects\Prodigiou\Prodigious.Web\bin\WebActivatorEx.dll
+C:\Users\Garnier\Documents\Visual Studio 2013\Projects\Prodigiou\Prodigious.Web\bin\Ninject.xml
+C:\Users\Garnier\Documents\Visual Studio 2013\Projects\Prodigiou\Prodigious.Web\bin\Ninject.Web.Common.xml
+C:\Users\Garnier\Documents\Visual Studio 2013\Projects\Prodigiou\Prodigious.Web\bin\Ninject.Web.Mvc.xml
+C:\Users\Garnier\Documents\Visual Studio 2013\Projects\Prodigiou\Prodigious.Web\bin\Ninject.Web.WebApi.xml
+C:\Users\Garnier\Documents\Visual Studio 2013\Projects\Prodigiou\Prodigious.Web\bin\Ninject.Web.WebApi.WebHost.dll
+C:\Users\Garnier\Documents\Visual Studio 2013\Projects\Prodigiou\Prodigious.Web\bin\Ninject.Web.WebApi.WebHost.xml

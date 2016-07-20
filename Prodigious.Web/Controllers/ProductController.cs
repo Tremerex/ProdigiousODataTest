@@ -1,5 +1,5 @@
 ﻿using Prodigious.Data;
-using Prodigious.DataModel.Repositories;
+using Prodigious.DataModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,7 +19,12 @@ namespace Prodigious.Web.Controllers
     public class ProductController : ApiController
     {
 
-        ProductRepository _productRepository = new ProductRepository();
+        IProductRepository _productRepository;
+
+        public ProductController(IProductRepository productRepository)
+        {
+            _productRepository = productRepository;
+        }
 
         [EnableQuery(MaxExpansionDepth = 3)]
         public IHttpActionResult GetProduct(int id)
@@ -125,22 +130,6 @@ namespace Prodigious.Web.Controllers
             base.Dispose(disposing);
             if (_productRepository != null)
                 _productRepository.Dispose();
-        }
-
-        [Route("api/Product/getDomain")]
-        [HttpPost]
-        public IHttpActionResult getDomain(LLDomain user)
-        {
-            var entry = new DirectoryEntry("LDAP://global.publicisgroupe.net", user.Name, user.Password);
-            try
-            {
-                object obj = entry.NativeObject;
-                return Ok(obj);
-            }
-            catch (Exception ex)
-            {
-                return InternalServerError(ex);
-            }
         }
 
     }

@@ -1,30 +1,16 @@
-using Prodigious.Data.Interfaces;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Data.Entity.Spatial;
 
 namespace Prodigious.Data
 {
 
-    [Table("SalesLT.ProductModelProductDescription")]
     public partial class ProductModelProductDescription : IModificationHistory
     {
 
-        [Key]
-        [Column(Order = 0)]
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int ProductModelID { get; set; }
 
-        [Key]
-        [Column(Order = 1)]
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int ProductDescriptionID { get; set; }
 
-        [Key]
-        [Column(Order = 2)]
-        [StringLength(6)]
         public string Culture { get; set; }
 
         public Guid rowguid { get; set; }
@@ -35,7 +21,6 @@ namespace Prodigious.Data
 
         public DateTime ModifiedDate { get; set; }
 
-        [NotMapped]
         public bool IsDirty { get; set; }
 
         public override bool Equals(object obj)
